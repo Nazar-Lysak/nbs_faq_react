@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_react_faq_title
+    - paragraphs.paragraphs_type.react_faq_component
+id: paragraph.react_faq_component.field_react_faq_title
+field_name: field_react_faq_title
+entity_type: paragraph
+bundle: react_faq_component
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

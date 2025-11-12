@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.react_faq_component.field_react_faq_description
+    - field.field.paragraph.react_faq_component.field_react_faq_list
+    - field.field.paragraph.react_faq_component.field_react_faq_title
+    - paragraphs.paragraphs_type.react_faq_component
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.react_faq_component.default
+targetEntityType: paragraph
+bundle: react_faq_component
+mode: default
+content:
+  field_react_faq_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_react_faq_list:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_react_faq_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

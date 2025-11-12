@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.react_faq_component_item.field_react_faq_item_body
+    - field.field.paragraph.react_faq_component_item.field_react_faq_item_subtitle
+    - paragraphs.paragraphs_type.react_faq_component_item
+  module:
+    - text
+id: paragraph.react_faq_component_item.default
+targetEntityType: paragraph
+bundle: react_faq_component_item
+mode: default
+content:
+  field_react_faq_item_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_react_faq_item_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_react_faq_list
+    - paragraphs.paragraphs_type.react_faq_component
+    - paragraphs.paragraphs_type.react_faq_component_item
+  module:
+    - entity_reference_revisions
+id: paragraph.react_faq_component.field_react_faq_list
+field_name: field_react_faq_list
+entity_type: paragraph
+bundle: react_faq_component
+label: ' React FAQ List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      react_faq_component_item: react_faq_component_item
+    negate: 0
+    target_bundles_drag_drop:
+      react_faq_component:
+        weight: 5
+        enabled: false
+      react_faq_component_item:
+        weight: 4
+        enabled: true
+      react_hero_component:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

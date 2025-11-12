@@ -1,0 +1,21 @@
+{{ attach_library('react_faq/faq_component') }}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'react-faq-component'
+  ]
+%}
+
+{% block paragraph %}
+  <section
+    {{ attributes.addClass(classes) }}
+    data-react-faq="{{ faq_data|json_encode|e('html_attr') }}"
+    data-paragraph-id="{{ paragraph.id() }}"
+  >
+  
+  </section>
+{% endblock paragraph %}

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_react_faq_item_body
+    - paragraphs.paragraphs_type.react_faq_component_item
+  module:
+    - text
+id: paragraph.react_faq_component_item.field_react_faq_item_body
+field_name: field_react_faq_item_body
+entity_type: paragraph
+bundle: react_faq_component_item
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

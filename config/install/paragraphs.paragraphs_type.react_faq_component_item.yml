@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: react_faq_component_item
+label: 'React FAQ Component Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

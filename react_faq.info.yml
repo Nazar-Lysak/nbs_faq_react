@@ -1,0 +1,9 @@
+name: 'React FAQ Component'
+description: 'FAQ component built with React for Drupal'
+type: module
+core_version_requirement: ^9 || ^10 || ^11
+package: React Components
+dependencies:
+  - drupal:field
+  - drupal:text
+  - paragraphs:paragraphs

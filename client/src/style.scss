@@ -1,0 +1,91 @@
+.paragraph--type--react-faq-component {
+  .faq-title {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+
+  .faq-description {
+    margin-bottom: 34px;
+  }
+
+
+  .faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faq-list-item {
+    position: relative;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+
+    h3 {
+      margin: 0;
+      font-size: 1.125rem;
+    }
+
+    &:hover {
+      background: #ebebeb;
+    }
+  }
+
+  .faq-icon {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.3s ease;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: #000;
+    }
+
+    &::after {
+      width: 1rem;
+      height: 0.125rem;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      width: 0.125rem;
+      height: 1rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .faq-list-item.is-open .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    padding: 0 1rem;
+  }
+
+  .faq-list-item.is-open .faq-answer {
+    max-height: 500px;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,10 @@
+faq_component:
+  version: 1.x
+  js:
+    client/dist/react_faq.js: { minified: false, preprocess: false, attributes: { defer: true } }
+  css:
+    theme:
+      client/dist/main.css: {}
+  dependencies:
+    - core/drupal
+    - core/once

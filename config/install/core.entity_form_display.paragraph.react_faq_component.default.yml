@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.react_faq_component.field_react_faq_description
+    - field.field.paragraph.react_faq_component.field_react_faq_list
+    - field.field.paragraph.react_faq_component.field_react_faq_title
+    - paragraphs.paragraphs_type.react_faq_component
+  module:
+    - paragraphs
+    - text
+id: paragraph.react_faq_component.default
+targetEntityType: paragraph
+bundle: react_faq_component
+mode: default
+content:
+  field_react_faq_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_react_faq_list:
+    type: paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_react_faq_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
