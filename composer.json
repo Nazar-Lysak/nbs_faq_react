@@ -1,0 +1,14 @@
+{
+  "name": "nazar-lysak/nbs_faq_react",
+  "description": "Custom Drupal module for FAQ component built with React",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "NBS Lviv Team",
+      "email": "Nazarii.Lysak@ua.nestle.com"
+    }
+  ],
+  "require": {
+    "drupal/core": "^9 || ^10 || ^11"
+  }
+}
